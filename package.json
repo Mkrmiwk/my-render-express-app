@@ -1,15 +1,25 @@
 {
-  "name": "my-render-express-app",
+  "name": "discord-bot",
   "version": "1.0.0",
-  "description": "A simple Express app for Render deployment.",
-  "main": "index.js",
+  "description": "My Discord bot hosted on Render",
+  "main": "server.js", // Ana bot dosyanızın adı (index.js ise index.js yaz)
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js" // Botu başlatma komutu (index.js ise node index.js yaz)
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  }
+    "discord.js": "^14.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=16.0.0" // Kullandığınız Node.js sürümüne göre ayarlayabilirsiniz.
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "nodejs",
+    "render"
+  ],
+  "author": "YourName",
+  "license": "ISC"
 }
